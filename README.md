@@ -1,3 +1,11 @@
+**Note: This is not a published npm package yet, so you wont be able to install it**
+
+You can still use it by cloning the repository and importing the base directory as a requirement.
+
+```
+const {useClient} = require('<directory containing cloned repo>/pg-connection-wrapper')
+```
+
 # Install
 
 ```
