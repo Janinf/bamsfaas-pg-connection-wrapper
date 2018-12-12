@@ -6,6 +6,12 @@ You can still use it by cloning the repository and importing the base directory 
 const {useClient} = require('<directory containing cloned repo>/pg-connection-wrapper')
 ```
 
+Then install dependencies inside the cloned directory.
+
+```
+npm install
+```
+
 # Install
 
 ```
