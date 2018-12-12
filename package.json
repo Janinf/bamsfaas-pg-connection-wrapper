@@ -16,5 +16,7 @@
     "url": "https://github.com/Janinf/npm__pg-connection-wrapper/issues"
   },
   "homepage": "https://github.com/Janinf/npm__pg-connection-wrapper#readme",
-  "dependencies": {}
+  "dependencies": {
+    "pg": "^7.7.1"
+  }
 }
