@@ -17,6 +17,8 @@ async function accessDatabase() {
 # Replaces
 
 ```
+const dbConfig = // Get database config such as access credentials
+
 async function accessDatabase() {
     const client = new Client(dbConfig)
     await client.connect()
