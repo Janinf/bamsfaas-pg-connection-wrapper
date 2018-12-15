@@ -1,23 +1,3 @@
-**Note: This is not a published npm package yet, so you wont be able to install it**
-
-You can still use it by cloning the repository and importing the base directory as a requirement.
-
-```
-const {useClient} = require('<directory containing cloned repo>/pg-connection-wrapper')
-```
-
-Then install dependencies inside the cloned directory.
-
-```
-npm install
-```
-
-# Install
-
-```
-npm install pg-connection-wrapper
-```
-
 # Usage
 
 ```
@@ -28,7 +8,25 @@ const dbConfig = // Get database config such as access credentials
 async function accessDatabase() {
     const result = await useClient(dbConfig, client => {
         // Access database via client
+        return ...
     })
+    // Use result
+}
+```
+
+# Replaces
+
+```
+async function accessDatabase() {
+    const client = new Client(dbConfig)
+    await client.connect()
+    try {
+        // Access database via client
+        const result = ...
+        // Use result
+    } finally {
+        client.end()
+    }
 }
 ```
 
